@@ -8,6 +8,10 @@
     border: 5px solid #666;
 }
 
+body {
+    margin-top: 30px;
+}
+
 hr {
     width: 250px;
     border-top: 3px solid #999;
@@ -45,4 +49,9 @@ footer p {
 
 footer p i {
     color: sandybrown;
+}
+
+nav ul {
+    margin-right: 0;
+    margin-left: auto;
 }
