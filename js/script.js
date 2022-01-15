@@ -18,6 +18,13 @@ $('.page-scroll').on('click', function(e) {
 });
 
 // PARALLAX
+
+// About
+$(window).on('load', function() {
+    $('.pKiri').addClass('pMuncul');
+    $('.pKanan').addClass('pMuncul');
+});
+
 $(window).scroll(function() {
     var wScroll = $(this).scrollTop();
 
@@ -36,7 +43,13 @@ $(window).scroll(function() {
 
     // Portfolio
     if (wScroll > $('.portfolio').offset().top - 250) {
-        $('.portfolio .img-thumbnail').addClass('muncul');
+
+        $('.portfolio .img-thumbnail').each(function(i) {
+            setTimeout(function() {
+                $('.portfolio .img-thumbnail').eq(i).addClass('muncul');
+            }, 300 * (i + 1));
+        });
+
     }
 
 });
