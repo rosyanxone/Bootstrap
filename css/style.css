@@ -5,7 +5,7 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css";
 .jumbotron img {
     width: 200px;
-    border: 5px solid #666;
+    border: 5px solid rgb(201, 200, 200);
 }
 
 body {
@@ -57,7 +57,15 @@ nav ul {
 }
 
 .jumbotron {
+    height: 360px;
     background-image: url('../img/header.jpg');
-    color: rgba(238, 238, 238, 0.788);
+    color: rgb(209, 204, 204);
     background-attachment: fixed;
+    background-size: cover;
+    /* background-position: 200 0; */
+}
+
+.jumbotron h1,
+.jumbotron p {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 5);
 }

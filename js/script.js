@@ -1,21 +1,21 @@
 // --- PUNYA PAK DHIKA ---
-// // Event pada link di klik
-// $('.page-scroll').on('click', function(e) {
+// Event pada link di klik
+$('.page-scroll').on('click', function(e) {
 
-//     // Ambil isi href
-//     var tujuan = $(this).attr('href');
+    // Ambil isi href
+    var tujuan = $(this).attr('href');
 
-//     // Tangkap elemen ybs
-//     var elemenTujuan = $(tujuan);
+    // Tangkap elemen ybs
+    var elemenTujuan = $(tujuan);
 
-//     // Pindahkan scroll
-//     $('body').animate({
-//         scrollTop: elemenTujuan.offset().top - 99
-//     }, 1000, 'linier');
+    // Pindahkan scroll
+    $('body').animate({
+        scrollTop: elemenTujuan.offset().top - 99
+    }, 1000, 'linier');
 
-//     e.preventDefault();
+    e.preventDefault();
 
-// });
+});
 
 
 // -- PUNYA YT TRAVERSY MEDIA ---
@@ -34,11 +34,11 @@
 
 
 // -- PUNYA YT DEV ED ---
-function smoothScroll(target, duration) {
-    var target = document.querySelector(target);
-    var targetPosition = target.getBoundingClientRect();
+// function smoothScroll(target, duration) {
+//     var target = document.querySelector(target);
+//     var targetPosition = target.getBoundingClientRect();
 
-    console.log(targetPosition);
-}
+//     console.log(targetPosition);
+// }
 
-smoothScroll('.page-scroll', 1000);
+// smoothScroll('.page-scroll', 1000);
