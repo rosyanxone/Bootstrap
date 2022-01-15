@@ -55,3 +55,9 @@ nav ul {
     margin-right: 0;
     margin-left: auto;
 }
+
+.jumbotron {
+    background-image: url('../img/header.jpg');
+    color: rgba(238, 238, 238, 0.788);
+    background-attachment: fixed;
+}
