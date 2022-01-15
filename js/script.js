@@ -10,12 +10,37 @@ $('.page-scroll').on('click', function(e) {
 
     // Pindahkan scroll
     $('body').animate({
-        scrollTop: elemenTujuan.offset().top - 99
-    }, 1000, 'linier');
+        scrollTop: elemenTujuan.offset().top - 50
+    }, 1250, 'easeInOutExpo');
 
     e.preventDefault();
 
 });
+
+// PARALLAX
+$(window).scroll(function() {
+    var wScroll = $(this).scrollTop();
+
+    $('.jumbotron img').css({
+        'transform': 'translate(0px, ' + wScroll / 4 + '%)'
+    });
+
+    $('.jumbotron h1').css({
+        'transform': 'translate(0px, ' + wScroll + '%)'
+    });
+
+    $('.jumbotron p').css({
+        'transform': 'translate(0px, ' + wScroll + '%)'
+    });
+
+
+    // Portfolio
+    if (wScroll > $('.portfolio').offset().top - 250) {
+        $('.portfolio .img-thumbnail').addClass('muncul');
+    }
+
+});
+
 
 
 // -- PUNYA YT TRAVERSY MEDIA ---

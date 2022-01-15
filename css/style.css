@@ -5,7 +5,7 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css";
 .jumbotron img {
     width: 200px;
-    border: 5px solid rgb(201, 200, 200);
+    border: 5px solid rgb(255, 255, 255);
 }
 
 body {
@@ -28,6 +28,15 @@ section {
 .portfolio {
     background-color: #eee;
     min-height: 800px;
+}
+
+.portfolio .img-thumbnail {
+    opacity: 0;
+    transition: .5s;
+}
+
+.portfolio .img-thumbnail.muncul {
+    opacity: 1;
 }
 
 .contact {
@@ -59,10 +68,11 @@ nav ul {
 .jumbotron {
     height: 360px;
     background-image: url('../img/header.jpg');
-    color: rgb(209, 204, 204);
+    color: rgb(255, 255, 255);
     background-attachment: fixed;
     background-size: cover;
     /* background-position: 200 0; */
+    overflow: hidden;
 }
 
 .jumbotron h1,
